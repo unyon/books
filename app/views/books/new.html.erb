@@ -1,0 +1,13 @@
+<div class="booyah-box">
+    <%= simple_form_for @book, url: books_path do |f| %>
+    <%= f.input :photo %>
+    <%= f.input :title %>
+    <%= f.input :author_first %>
+    <%= f.input :author_last %>
+    <%= f.input :year %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+    <br />
+  <% end %>
+  <br />
+</div>

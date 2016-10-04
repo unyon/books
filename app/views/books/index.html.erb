@@ -1,0 +1,16 @@
+<h1>Hello</h1>
+<%= link_to 'New', new_book_path %>
+
+<div class="book">
+	<% @books.each do |book| %>
+		<%= link_to image_tag(book.photo), '#' %>
+		<br>
+		<%= book.title %>
+		<br>
+		<br>
+		<%= book.author_first %>&nbsp;<%= book.author_last %>
+		<br>
+		<br>
+	<% end %>
+	
+</div>
